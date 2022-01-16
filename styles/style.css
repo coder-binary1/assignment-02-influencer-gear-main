@@ -28,6 +28,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 69px;
 }
 .top-sec-disc{
     width: 582px;
@@ -43,14 +44,18 @@ body{
     font-size: 16px;
     line-height: 24px;
     color: #3A3A3A;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 .pre-book{
-    font-weight: bold;
+    width: 196px;
+    height: 44px;
+    font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
-    border: 0;
     padding: 10px 24px;
     background-color: #E02C6D;
+    border: 0;
     border-radius: 41px;
 }
 .top-sec-disc button span{
@@ -81,6 +86,8 @@ body{
     font-size: 28px;
     line-height: 70px;
     color: #3A3A3A;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .collections{
     display: grid;
