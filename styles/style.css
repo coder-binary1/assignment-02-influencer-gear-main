@@ -75,7 +75,25 @@ body{
     transform: rotate(360deg);
     transition: transform 2s ease-in-out;
 }
+/* --------------------
+    Brand Logo Style 
+----------------------*/
+.brand{
+    margin-bottom: 100px;
+}
+.brand hr{
+    width: 1110px;
+    border-top: 0;
 
+}
+.brand-logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 25px;
+    margin: 35px 0 35px 0;
+}
 /* ------------------------------
     popular collections style 
 ---------------------------------*/
@@ -154,24 +172,16 @@ body{
     letter-spacing: 0.018em;
     color: #787885;
 }
-
-
-/* --------------------
-    Brand Logo Style 
-----------------------*/
-.brand{
-    margin-bottom: 100px;
+.explore-more{
+    float: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 50px;
 }
-.brand hr{
-    width: 1110px;
-    border-top: 0;
-
-}
-.brand-logo{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    justify-items: center;
-    align-items: center;
-    column-gap: 25px;
-    margin: 35px 0 35px 0;
+.explore-more span{
+    font-size: 14px;
+    margin-left: 8px;
 }
