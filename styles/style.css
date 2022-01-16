@@ -144,7 +144,6 @@ body{
     letter-spacing: 0.1px;
     color: #5E6366;
 }
-
 .collection-info{
     width: 196px;
     font-family: Inter;
@@ -154,5 +153,25 @@ body{
     line-height: 143%;
     letter-spacing: 0.018em;
     color: #787885;
+}
 
+
+/* --------------------
+    Brand Logo Style 
+----------------------*/
+.brand{
+    margin-bottom: 100px;
+}
+.brand hr{
+    width: 1110px;
+    border-top: 0;
+
+}
+.brand-logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 25px;
+    margin: 35px 0 35px 0;
 }
