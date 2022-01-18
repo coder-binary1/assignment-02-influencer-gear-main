@@ -48,11 +48,13 @@ body{
  --------------------------------*/
  header{
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
      margin: 87px 120px 50px 120px;
  }
-
+ /* .regular-device-hide{
+     display: none;
+ } */
  .site-logo{
     font-style: normal;
     font-weight: bold;
@@ -113,7 +115,10 @@ body{
 .main-camera{
     background-image: url(../images/Circle\ design.svg);
     width: 475px;
-    height: 475px;  
+    height: 475px;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 .main-camera img{
     width: 440px;
@@ -121,8 +126,8 @@ body{
     margin: 30 33 31 2;
 }
 .top-sec:hover .main-camera{
-    transform: rotate(360deg);
-    transition: transform 2s ease-in-out;
+    transform: rotate(15deg);
+    transition: transform .1s ease-in-out;
 }
 /* --------------------
     Brand Logo Style 
@@ -293,4 +298,89 @@ footer{
     height: 32px;
     background-color: #282644;
     border-radius: 50%;
+}
+
+/* --------------
+    Media Query
+---------------- */
+
+/* mobile device */
+@media only screen and (max-width: 688px) {
+    header{
+        justify-content: space-evenly;
+        margin: 35px 0 35px 0 ;
+    }
+    /* .regular-device-hide{
+        display: block;
+    } */
+    .small-device-hide{
+        display: none;
+    }
+    .top-sec{
+        flex-direction: column-reverse;
+        text-align: center; 
+    }
+    .top-sec-disc{
+        width: 360px;
+        margin-top: 14px;
+    }
+    .top-sec-disc h2{
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .top-sec-disc p{
+        width: 286px;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .pre-book{
+        font-weight: 500;
+    }
+    .main-camera{
+        width: 257px;
+        height: 257px;
+        background-size: cover;
+    }
+    .main-camera img{
+        width: 202px;
+        height: 190px;
+    margin: 51px 33px 16px 22px;
+    }
+    .top-sec:hover .main-camera{
+        transform: rotate(360deg);
+        transition: transform 2s ease-in-out;
+    }
+    /* .brand{
+        display: none;;
+    } */
+    .collections, .categories {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* Tablet device */
+@media only screen and (min-width: 689px) and (max-width: 991px){
+    header{
+        margin: 35px 0 35px 0 ;
+    }
+    .top-sec{
+        flex-direction: column-reverse;
+        text-align: center; 
+    }
+    .top-sec-disc{
+        margin-top: 14px;
+    }
+    .collections, .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hide-tab{
+        display: none;
+    }
+}
+/* Desktop device */
+@media only screen and (min-width: 992px) and (max-width: 1376px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
